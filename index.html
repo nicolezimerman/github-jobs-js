@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Github jobs search</title>
+  </head>
+
+  <body>
+    <main>
+      <h1><b>Github</b> Jobs</h1>
+      <div class="search">
+        <div class="search-bar">
+          <i class="material-icons md-24">shopping_bag</i>
+          <input id="search-bar-input" type="text" value="Title, companies, expertise" />
+          <button onclick="fetchData()">Search</button>
+        </div>
+      </div>
+      <div class="time-filter">
+        <input type="checkbox" name="full-time" id="full-time">
+        <label>Full time</label>
+      </div>
+      <div>
+        <h4 class="sub-title">LOCATION</h4>
+      </div>
+      <div class="filter">
+        <div class="search-bar">
+          <i class="material-icons md-24">public</i>
+          <input type="text" value="City, state, zip code or country" />
+        </div>
+      </div>
+      <div>
+        <ul class="filter-list">
+          <li>
+            <input type="checkbox" name="full-time" id="full-time">
+            <label>London</label>
+          </li>
+          <li>
+            <input type="checkbox" name="full-time" id="full-time">
+            <label>Amsterdam</label>
+          </li>
+          <li>
+            <input type="checkbox" name="full-time" id="full-time">
+            <label>New york</label>
+          </li>
+          <li>
+            <input type="checkbox" name="full-time" id="full-time">
+            <label>Berlin</label>
+          </li>
+        </ul>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-logo">
+            <div class="card-image">Not found</div>
+            <!--<img class="card-image" src="" alt="logo">-->
+          </div>
+          <div class="card-details">
+            <h5 class="card-company">Company</h5>
+            <p class="card-title">Job title</p>
+            <p class="card-badge">Full time</p>
+            <div class="card-info">
+              <div class="card-info-detail">
+                <i class="material-icons md-24">public</i>
+                <p class="card-location">New York</p>
+              </div>
+              <div class="card-info-detail">
+                <i class="material-icons md-24">access_time</i>
+                <p class="card-days">5 days ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <footer class="footer">
+      Developed by <a href="https://nicolezimerman.github.io/" target="_blank">Nicole Zimerman</a>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
